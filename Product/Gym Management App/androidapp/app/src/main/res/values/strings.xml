@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GymTrainning</string>
+
+
+    <string-array name="exlist">
+        <item>Full Body</item>
+        <item>Upper Body</item>
+        <item>Lower Body</item>
+    </string-array>
+</resources>

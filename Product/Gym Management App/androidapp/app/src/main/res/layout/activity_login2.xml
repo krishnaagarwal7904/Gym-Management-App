@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Login">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvlogin"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        app:cardCornerRadius="150dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/login" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:id="@+id/lllogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cvlogin"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/dark_gray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Welcome Back!"
+            android:textColor="@color/dark_gray"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="10dp"
+            card_view:cardUseCompatPadding="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="20dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="left"
+                            android:text="Email Address"
+                            android:textColor="@color/darker_gray"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp30"
+                            android:layout_marginRight="@dimen/dp30"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp14" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp20"
+                            android:layout_marginTop="@dimen/dp15"
+                            android:gravity="left"
+                            android:text="Password"
+                            android:textColor="@color/darker_gray"
+                            android:textSize="@dimen/sp14" />
+
+                        <EditText
+                            android:id="@+id/etPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp30"
+                            android:layout_marginRight="@dimen/dp30"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:drawablePadding="@dimen/dp10"
+                            android:gravity="left"
+                            android:inputType="textPassword"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp18" />
+
+                        <TextView
+                            android:id="@+id/tvForpass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dp20"
+                            android:gravity="right"
+                            android:padding="@dimen/dp5"
+                            android:text=" Forgot Password?"
+                            android:textColor="@color/darker_gray"
+                            android:textSize="@dimen/sp12" />
+
+                        <Button
+                            android:id="@+id/btnLogin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp30"
+                            android:layout_marginTop="@dimen/dp10"
+                            android:layout_marginRight="@dimen/dp30"
+                            android:layout_marginBottom="@dimen/dp10"
+                            android:background="@color/dark_red"
+                            android:padding="@dimen/dp10"
+                            android:text="Sign In"
+                            android:textColor="@color/white" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp20"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp20"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginBottom="@dimen/dp5"
+            android:gravity="center"
+            android:text="New Here?"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginBottom="@dimen/dp5"
+            android:gravity="center"
+            android:text=" Get Started"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/sp18" />
+    </LinearLayout>
+
+
+</RelativeLayout>

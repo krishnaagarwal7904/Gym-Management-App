@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FitnessGoal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:strokeColor="@color/dark_red"
+            app:strokeWidth="3dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="What is Your Fitness Goal?"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:strokeColor="@color/dark_red"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvbm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="Build Muscle"
+                    android:textSize="30dp" />
+
+                <CheckBox
+
+                    android:id="@+id/chkbm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:buttonTint="@color/dark_red"
+                    android:scaleX="2"
+                    android:scaleY="2" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:strokeColor="@color/dark_red"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvlw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="Lose Weight"
+                    android:textSize="30dp" />
+
+                <CheckBox
+
+                    android:id="@+id/chklooseweight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+
+                    android:buttonTint="@color/dark_red"
+                    android:scaleX="2"
+                    android:scaleY="2" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:strokeColor="@color/dark_red"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvgf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="Get Fit"
+                    android:textSize="30dp" />
+
+                <CheckBox
+
+                    android:id="@+id/chkgetfit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:buttonTint="@color/dark_red"
+                    android:scaleX="2"
+                    android:scaleY="2" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:strokeColor="@color/dark_red"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvsh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="Stay Healthy"
+                    android:textSize="30dp" />
+
+                <CheckBox
+
+                    android:id="@+id/chkhealthy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:layout_marginRight="10dp"
+                    android:buttonTint="@color/dark_red"
+                    android:scaleX="2"
+                    android:scaleY="2" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="20dp">
+
+
+            <Button
+                android:id="@+id/btnnext"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Next"
+                android:textSize="18dp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_gravity="center"
+            android:text="or"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="20dp">
+
+
+            <Button
+                android:id="@+id/btncustom"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Create Own Plan"
+                android:textSize="18dp" />
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp60"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+
+        android:background="@color/dark_red"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/llhome"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/home" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Home"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llhis"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/myplans" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="History"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llplans"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/plans" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Plan"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnbasic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Basic Plan"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/btncustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Custom Plan"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/ll1"
+        android:layout_above="@id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AutomatedPlan">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:strokeColor="@color/dark_gray"
+
+                    app:strokeWidth="1dp">
+
+                    <TextView
+                        android:id="@+id/tvgen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/dark_red"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Gender"
+                        android:visibility="gone"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/dark_red"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Full Body"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/dark_gray" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvfb"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:strokeColor="@color/dark_gray"
+                    app:strokeWidth="1dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/dark_red"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Upper Body"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/dark_gray" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="20dp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:strokeColor="@color/dark_gray"
+                    app:strokeWidth="1dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/dark_red"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Lower Body"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/dark_gray" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvlb"
+                    android:layout_width="match_parent"
+
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnstart"
+            android:text="Start workout Session"
+            android:visibility="visible"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp60"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+
+        android:background="@color/dark_red"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/llhome"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/home" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Home"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llhis"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/myplans" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="History"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llplans"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/plans" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Make Plan"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
